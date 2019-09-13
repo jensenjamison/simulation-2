@@ -9,6 +9,11 @@ export default class Dashboard extends Component {
         this.state ={
             houses:[]
         }
+        this.handleInput = this.handleInput.bind(this)
+    }
+
+    handleInput(e) {
+        this.setState({[e.target.houses] : e.target.value }) 
     }
 
 
@@ -16,7 +21,7 @@ export default class Dashboard extends Component {
     render(){
         return(
             <div>
-                <Link> <button>Dashboard</button> </Link>
+                <Link> <button>Wizard</button> </Link>
                 <House  />
             </div>
         )

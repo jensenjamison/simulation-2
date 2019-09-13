@@ -13,10 +13,13 @@ export default class Wizard extends Component {
         }
     }
 
+    
+
+
     render(){
         return(
             <div>
-                
+                <Link> <button>Dashboard</button> </Link>
             </div>
         )
     }
